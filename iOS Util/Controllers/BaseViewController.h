@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  iOS Util
 //
-//  Created by 黄聪 on 16/7/7.
+//  Created by 黄聪 on 16/7/8.
 //  Copyright © 2016年 黄聪. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BaseViewController : UIViewController
 
 @end
-
