@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VergilTextView : UITextView
+@interface VergilTextView : UITextView<UITextViewDelegate>
 
 @property (nonatomic,strong)NSString *placeHolder;
 @property (nonatomic,strong)UIColor *placeHolderColor;
+@property (nonatomic,assign)NSInteger wordsLength;
 
 @end

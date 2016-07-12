@@ -8,11 +8,10 @@
 
 #import "BaseViewController.h"
 #import "VergilTextView.h"
-#import "PlaceholderTextView.h"
+
 
 
 @interface TestViewController : BaseViewController<UITextViewDelegate>
-@property (weak, nonatomic) IBOutlet PlaceholderTextView *testTextView;
 @property (weak, nonatomic) IBOutlet VergilTextView *vergilTextView;
 
 @end

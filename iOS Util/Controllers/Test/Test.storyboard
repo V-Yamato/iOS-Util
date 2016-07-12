@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Test View Controller-->
@@ -18,17 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q7F-bN-Gar" customClass="PlaceholderTextView">
-                                <rect key="frame" x="200" y="200" width="200" height="200"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="E0P-Bm-X6K"/>
-                                    <constraint firstAttribute="width" constant="200" id="XgF-h4-PTJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rna-LI-x0T" customClass="VergilTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rna-LI-x0T" customClass="VergilTextView">
                                 <rect key="frame" x="200" y="48" width="200" height="100"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.80000000000000004" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -37,16 +26,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rna-LI-x0T" firstAttribute="height" secondItem="Q7F-bN-Gar" secondAttribute="height" multiplier="0.5" id="4o8-JQ-a0C"/>
-                            <constraint firstItem="Q7F-bN-Gar" firstAttribute="centerY" secondItem="vXM-3S-sYZ" secondAttribute="centerY" id="TJe-yC-oFo"/>
-                            <constraint firstItem="Q7F-bN-Gar" firstAttribute="top" secondItem="rna-LI-x0T" secondAttribute="bottom" constant="52" id="Twd-lF-erD"/>
-                            <constraint firstItem="rna-LI-x0T" firstAttribute="width" secondItem="Q7F-bN-Gar" secondAttribute="width" id="UUC-ga-KV1"/>
-                            <constraint firstItem="Q7F-bN-Gar" firstAttribute="centerX" secondItem="vXM-3S-sYZ" secondAttribute="centerX" id="Wh4-fd-fY0"/>
                             <constraint firstItem="rna-LI-x0T" firstAttribute="centerX" secondItem="vXM-3S-sYZ" secondAttribute="centerX" id="y9H-uk-8y1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="testTextView" destination="Q7F-bN-Gar" id="GE7-ab-A0f"/>
                         <outlet property="vergilTextView" destination="rna-LI-x0T" id="myo-H2-4J4"/>
                     </connections>
                 </viewController>

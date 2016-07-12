@@ -16,8 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _vergilTextView.delegate=self;
-    _testTextView.placeholder=@"haha";
     _vergilTextView.placeHolder=@"vergil";
     
     // Do any additional setup after loading the view.
@@ -29,10 +27,6 @@
 }
 
 
--(void)textViewDidChange:(UITextView *)textView{
-    _vergilTextView.backgroundColor=[UIColor redColor];
-
-}
 /*
 #pragma mark - Navigation
 
