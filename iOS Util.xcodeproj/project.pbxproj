@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0040BB1D333654006B7D84 /* VergilTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0040BA1D333654006B7D84 /* VergilTextView.m */; };
 		8A0040BF1D3362E8006B7D84 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0040BE1D3362E8006B7D84 /* TestViewController.m */; };
 		8A0040C11D336306006B7D84 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0040C01D336306006B7D84 /* Test.storyboard */; };
+		8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1491D3DF22B002DC69E /* VergilTextView.m */; };
+		8A50E14F1D3DF29E002DC69E /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50E14E1D3DF29E002DC69E /* WebView.storyboard */; };
+		8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1511D3DF2ED002DC69E /* WebViewController.m */; };
+		8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */; };
 		8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94BE1D2E56FD0058EE7C /* main.m */; };
 		8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94C11D2E56FD0058EE7C /* AppDelegate.m */; };
 		8ACF94C81D2E56FD0058EE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF94C61D2E56FD0058EE7C /* Main.storyboard */; };
@@ -40,11 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A0040B91D333654006B7D84 /* VergilTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VergilTextView.h; sourceTree = "<group>"; };
-		8A0040BA1D333654006B7D84 /* VergilTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VergilTextView.m; sourceTree = "<group>"; };
 		8A0040BD1D3362E8006B7D84 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		8A0040BE1D3362E8006B7D84 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		8A0040C01D336306006B7D84 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		8A50E1491D3DF22B002DC69E /* VergilTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VergilTextView.m; sourceTree = "<group>"; };
+		8A50E14A1D3DF22B002DC69E /* VergilTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VergilTextView.h; sourceTree = "<group>"; };
+		8A50E14E1D3DF29E002DC69E /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		8A50E1501D3DF2ED002DC69E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		8A50E1511D3DF2ED002DC69E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		8A50E1531D3DF9A3002DC69E /* Vergil_WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_WKWebView.h; sourceTree = "<group>"; };
+		8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vergil_WKWebView.m; sourceTree = "<group>"; };
 		8ACF94BA1D2E56FD0058EE7C /* iOS Util.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Util.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACF94BE1D2E56FD0058EE7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ACF94C01D2E56FD0058EE7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,8 +104,8 @@
 		8A0040B81D333625006B7D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A0040B91D333654006B7D84 /* VergilTextView.h */,
-				8A0040BA1D333654006B7D84 /* VergilTextView.m */,
+				8A50E14C1D3DF245002DC69E /* WebView */,
+				8A50E1481D3DF216002DC69E /* TextView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +118,34 @@
 				8A0040C01D336306006B7D84 /* Test.storyboard */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		8A50E1481D3DF216002DC69E /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				8A50E1491D3DF22B002DC69E /* VergilTextView.m */,
+				8A50E14A1D3DF22B002DC69E /* VergilTextView.h */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		8A50E14C1D3DF245002DC69E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				8A50E1531D3DF9A3002DC69E /* Vergil_WKWebView.h */,
+				8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		8A50E14D1D3DF28A002DC69E /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A50E14E1D3DF29E002DC69E /* WebView.storyboard */,
+				8A50E1501D3DF2ED002DC69E /* WebViewController.h */,
+				8A50E1511D3DF2ED002DC69E /* WebViewController.m */,
+			);
+			path = WebViewController;
 			sourceTree = "<group>";
 		};
 		8ACF94B11D2E56FD0058EE7C = {
@@ -190,6 +226,7 @@
 		8AFF91291D2FBEEC00180BAD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A50E14D1D3DF28A002DC69E /* WebViewController */,
 				8AFF912A1D2FBF0000180BAD /* BaseViewController.h */,
 				8AFF912B1D2FBF0000180BAD /* BaseViewController.m */,
 				8A0040BC1D3362DB006B7D84 /* Test */,
@@ -300,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A50E14F1D3DF29E002DC69E /* WebView.storyboard in Resources */,
 				8ACF94CD1D2E56FD0058EE7C /* LaunchScreen.storyboard in Resources */,
 				8ACF94CA1D2E56FD0058EE7C /* Assets.xcassets in Resources */,
 				8A0040C11D336306006B7D84 /* Test.storyboard in Resources */,
@@ -331,9 +369,11 @@
 				8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */,
 				8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */,
 				8A0040BF1D3362E8006B7D84 /* TestViewController.m in Sources */,
+				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
+				8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */,
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
-				8A0040BB1D333654006B7D84 /* VergilTextView.m in Sources */,
+				8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */,
 				8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
