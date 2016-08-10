@@ -16,12 +16,10 @@
     if (self=[super initWithFrame:frame]) {
         self.navigationDelegate=self;
 //        [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
-        [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://wap.lsbar.com/"]]];
+        [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com/"]]];
     }
     return self;
 }
-
-
 
 
 #pragma mark --Delegates
@@ -36,9 +34,6 @@
     [loadingLbl removeFromSuperview];
 
 }
-
-
-
 
 
 @end

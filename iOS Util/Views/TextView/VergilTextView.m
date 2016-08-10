@@ -87,7 +87,7 @@
     // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
     if (!position) {
       if (toBeString.length == _wordsLength) {
-        self.text = [toBeString substringToIndex:10];
+        self.text = [toBeString substringToIndex:_wordsLength];
       }
     } // 有高亮选择的字符串，则暂不对文字进行统计和限制
     else {
@@ -95,7 +95,7 @@
   } // 中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
   else {
     if (toBeString.length >= _wordsLength) {
-      self.text = [toBeString substringToIndex:10];
+      self.text = [toBeString substringToIndex:_wordsLength];
     }
   }
 }
@@ -106,7 +106,7 @@
     NSLog(@"长度没设置，默认10");
   }
   if (self.text.length >= _wordsLength) {
-    self.text = [self.text substringToIndex:10];
+    self.text = [self.text substringToIndex:_wordsLength];
   }
 }
 

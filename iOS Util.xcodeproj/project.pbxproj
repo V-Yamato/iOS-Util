@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0040BF1D3362E8006B7D84 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0040BE1D3362E8006B7D84 /* TestViewController.m */; };
-		8A0040C11D336306006B7D84 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0040C01D336306006B7D84 /* Test.storyboard */; };
+		8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A05E3BB1D5B12CB0059C319 /* Main.storyboard */; };
+		8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3BE1D5B12DF0059C319 /* MainViewController.m */; };
+		8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */; };
 		8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1491D3DF22B002DC69E /* VergilTextView.m */; };
-		8A50E14F1D3DF29E002DC69E /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50E14E1D3DF29E002DC69E /* WebView.storyboard */; };
 		8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1511D3DF2ED002DC69E /* WebViewController.m */; };
 		8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */; };
 		8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94BE1D2E56FD0058EE7C /* main.m */; };
 		8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94C11D2E56FD0058EE7C /* AppDelegate.m */; };
-		8ACF94C81D2E56FD0058EE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF94C61D2E56FD0058EE7C /* Main.storyboard */; };
 		8ACF94CA1D2E56FD0058EE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF94C91D2E56FD0058EE7C /* Assets.xcassets */; };
 		8ACF94CD1D2E56FD0058EE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF94CB1D2E56FD0058EE7C /* LaunchScreen.storyboard */; };
 		8ACF94D81D2E56FD0058EE7C /* iOS_UtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94D71D2E56FD0058EE7C /* iOS_UtilTests.m */; };
@@ -43,12 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A0040BD1D3362E8006B7D84 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		8A0040BE1D3362E8006B7D84 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		8A0040C01D336306006B7D84 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		8A05E3BB1D5B12CB0059C319 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8A05E3BD1D5B12DF0059C319 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8A05E3BE1D5B12DF0059C319 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8A05E3C11D5B15AB0059C319 /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
+		8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		8A50E1491D3DF22B002DC69E /* VergilTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VergilTextView.m; sourceTree = "<group>"; };
 		8A50E14A1D3DF22B002DC69E /* VergilTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VergilTextView.h; sourceTree = "<group>"; };
-		8A50E14E1D3DF29E002DC69E /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		8A50E1501D3DF2ED002DC69E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		8A50E1511D3DF2ED002DC69E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		8A50E1531D3DF9A3002DC69E /* Vergil_WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_WKWebView.h; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 		8ACF94BE1D2E56FD0058EE7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ACF94C01D2E56FD0058EE7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ACF94C11D2E56FD0058EE7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8ACF94C71D2E56FD0058EE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ACF94C91D2E56FD0058EE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ACF94CC1D2E56FD0058EE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ACF94CE1D2E56FD0058EE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,14 +109,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		8A0040BC1D3362DB006B7D84 /* Test */ = {
+		8A05E3C01D5B159D0059C319 /* TextviewController */ = {
 			isa = PBXGroup;
 			children = (
-				8A0040BD1D3362E8006B7D84 /* TestViewController.h */,
-				8A0040BE1D3362E8006B7D84 /* TestViewController.m */,
-				8A0040C01D336306006B7D84 /* Test.storyboard */,
+				8A05E3C11D5B15AB0059C319 /* TextViewViewController.h */,
+				8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */,
 			);
-			path = Test;
+			path = TextviewController;
 			sourceTree = "<group>";
 		};
 		8A50E1481D3DF216002DC69E /* TextView */ = {
@@ -141,7 +139,6 @@
 		8A50E14D1D3DF28A002DC69E /* WebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8A50E14E1D3DF29E002DC69E /* WebView.storyboard */,
 				8A50E1501D3DF2ED002DC69E /* WebViewController.h */,
 				8A50E1511D3DF2ED002DC69E /* WebViewController.m */,
 			);
@@ -171,12 +168,11 @@
 		8ACF94BC1D2E56FD0058EE7C /* iOS Util */ = {
 			isa = PBXGroup;
 			children = (
+				8ACF94F01D2E57540058EE7C /* Category */,
 				8A0040B81D333625006B7D84 /* Views */,
 				8AFF91291D2FBEEC00180BAD /* Controllers */,
-				8ACF94F01D2E57540058EE7C /* Category */,
 				8ACF94C01D2E56FD0058EE7C /* AppDelegate.h */,
 				8ACF94C11D2E56FD0058EE7C /* AppDelegate.m */,
-				8ACF94C61D2E56FD0058EE7C /* Main.storyboard */,
 				8ACF94C91D2E56FD0058EE7C /* Assets.xcassets */,
 				8ACF94CB1D2E56FD0058EE7C /* LaunchScreen.storyboard */,
 				8ACF94CE1D2E56FD0058EE7C /* Info.plist */,
@@ -226,10 +222,13 @@
 		8AFF91291D2FBEEC00180BAD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A05E3C01D5B159D0059C319 /* TextviewController */,
 				8A50E14D1D3DF28A002DC69E /* WebViewController */,
+				8A05E3BB1D5B12CB0059C319 /* Main.storyboard */,
 				8AFF912A1D2FBF0000180BAD /* BaseViewController.h */,
 				8AFF912B1D2FBF0000180BAD /* BaseViewController.m */,
-				8A0040BC1D3362DB006B7D84 /* Test */,
+				8A05E3BD1D5B12DF0059C319 /* MainViewController.h */,
+				8A05E3BE1D5B12DF0059C319 /* MainViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -337,11 +336,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A50E14F1D3DF29E002DC69E /* WebView.storyboard in Resources */,
+				8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */,
 				8ACF94CD1D2E56FD0058EE7C /* LaunchScreen.storyboard in Resources */,
 				8ACF94CA1D2E56FD0058EE7C /* Assets.xcassets in Resources */,
-				8A0040C11D336306006B7D84 /* Test.storyboard in Resources */,
-				8ACF94C81D2E56FD0058EE7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,9 +363,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */,
 				8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */,
 				8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */,
-				8A0040BF1D3362E8006B7D84 /* TestViewController.m in Sources */,
+				8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */,
 				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
 				8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */,
@@ -410,14 +408,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8ACF94C61D2E56FD0058EE7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ACF94C71D2E56FD0058EE7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8ACF94CB1D2E56FD0058EE7C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
