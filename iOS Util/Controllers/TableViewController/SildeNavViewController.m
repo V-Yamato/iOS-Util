@@ -1,29 +1,23 @@
 //
-//  TextViewViewController.m
+//  SildeNavViewController.m
 //  iOS Util
 //
-//  Created by 黄聪 on 16/8/10.
+//  Created by 黄聪 on 16/8/11.
 //  Copyright © 2016年 黄聪. All rights reserved.
 //
 
-#import "TextViewViewController.h"
-#import "Vergil_TextView.h"
+#import "SildeNavViewController.h"
 
-@interface TextViewViewController ()
-@property (weak, nonatomic) IBOutlet Vergil_TextView *textView;
+@interface SildeNavViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *navScrollView;
 
 @end
 
-@implementation TextViewViewController
+@implementation SildeNavViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _textView.placeHolder=@"我是placeholder！！";
-    _textView.placeHolderColor=[UIColor colorWithHex:0x48BBC7];
-    _textView.wordsLength=20;
-//    textview光标从头开始SB里面直接勾选
-//    self.automaticallyAdjustsScrollViewInsets=NO;
-    
+    // Do any additional setup after loading the view.1
 }
 
 - (void)didReceiveMemoryWarning {

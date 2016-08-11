@@ -6,14 +6,14 @@
 //  Copyright © 2016年 黄聪. All rights reserved.
 //
 
-#import "VergilTextView.h"
+#import "Vergil_TextView.h"
 
-@interface VergilTextView ()
+@interface Vergil_TextView ()
 @property(nonatomic, strong) UILabel *placeHolderLbl;
 
 @end
 
-@implementation VergilTextView
+@implementation Vergil_TextView
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
   if (self = [super initWithCoder:aDecoder]) {

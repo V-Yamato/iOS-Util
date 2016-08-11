@@ -10,7 +10,7 @@
 		8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A05E3BB1D5B12CB0059C319 /* Main.storyboard */; };
 		8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3BE1D5B12DF0059C319 /* MainViewController.m */; };
 		8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */; };
-		8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1491D3DF22B002DC69E /* VergilTextView.m */; };
+		8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1491D3DF22B002DC69E /* Vergil_TextView.m */; };
 		8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1511D3DF2ED002DC69E /* WebViewController.m */; };
 		8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */; };
 		8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94BE1D2E56FD0058EE7C /* main.m */; };
@@ -21,6 +21,8 @@
 		8ACF94E31D2E56FD0058EE7C /* iOS_UtilUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94E21D2E56FD0058EE7C /* iOS_UtilUITests.m */; };
 		8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94F21D2E57660058EE7C /* UIColor+Util.m */; };
 		8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94F51D2E57F80058EE7C /* CALayer+Util.m */; };
+		8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */; };
+		8AFBF1741D5C671B00E1F683 /* Vergil_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */; };
 		8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF912B1D2FBF0000180BAD /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +49,8 @@
 		8A05E3BE1D5B12DF0059C319 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8A05E3C11D5B15AB0059C319 /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
-		8A50E1491D3DF22B002DC69E /* VergilTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VergilTextView.m; sourceTree = "<group>"; };
-		8A50E14A1D3DF22B002DC69E /* VergilTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VergilTextView.h; sourceTree = "<group>"; };
+		8A50E1491D3DF22B002DC69E /* Vergil_TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vergil_TextView.m; sourceTree = "<group>"; };
+		8A50E14A1D3DF22B002DC69E /* Vergil_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_TextView.h; sourceTree = "<group>"; };
 		8A50E1501D3DF2ED002DC69E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		8A50E1511D3DF2ED002DC69E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		8A50E1531D3DF9A3002DC69E /* Vergil_WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_WKWebView.h; sourceTree = "<group>"; };
@@ -71,6 +73,10 @@
 		8ACF94F41D2E57F80058EE7C /* CALayer+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Util.h"; sourceTree = "<group>"; };
 		8ACF94F51D2E57F80058EE7C /* CALayer+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Util.m"; sourceTree = "<group>"; };
 		8ACF94F71D2E58B60058EE7C /* Util.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.pch; sourceTree = "<group>"; };
+		8AFBF16E1D5C479500E1F683 /* SildeNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SildeNavViewController.h; sourceTree = "<group>"; };
+		8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SildeNavViewController.m; sourceTree = "<group>"; };
+		8AFBF1721D5C671B00E1F683 /* Vergil_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_ScrollView.h; sourceTree = "<group>"; };
+		8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vergil_ScrollView.m; sourceTree = "<group>"; };
 		8AFF912A1D2FBF0000180BAD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8AFF912B1D2FBF0000180BAD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +109,7 @@
 		8A0040B81D333625006B7D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8AFBF1711D5C66FF00E1F683 /* ScrollView */,
 				8A50E14C1D3DF245002DC69E /* WebView */,
 				8A50E1481D3DF216002DC69E /* TextView */,
 			);
@@ -121,8 +128,8 @@
 		8A50E1481D3DF216002DC69E /* TextView */ = {
 			isa = PBXGroup;
 			children = (
-				8A50E1491D3DF22B002DC69E /* VergilTextView.m */,
-				8A50E14A1D3DF22B002DC69E /* VergilTextView.h */,
+				8A50E14A1D3DF22B002DC69E /* Vergil_TextView.h */,
+				8A50E1491D3DF22B002DC69E /* Vergil_TextView.m */,
 			);
 			path = TextView;
 			sourceTree = "<group>";
@@ -219,9 +226,29 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		8AFBF16D1D5C474500E1F683 /* SlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8AFBF16E1D5C479500E1F683 /* SildeNavViewController.h */,
+				8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */,
+			);
+			name = SlideViewController;
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		8AFBF1711D5C66FF00E1F683 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8AFBF1721D5C671B00E1F683 /* Vergil_ScrollView.h */,
+				8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		8AFF91291D2FBEEC00180BAD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8AFBF16D1D5C474500E1F683 /* SlideViewController */,
 				8A05E3C01D5B159D0059C319 /* TextviewController */,
 				8A50E14D1D3DF28A002DC69E /* WebViewController */,
 				8A05E3BB1D5B12CB0059C319 /* Main.storyboard */,
@@ -367,11 +394,13 @@
 				8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */,
 				8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */,
 				8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */,
+				8AFBF1741D5C671B00E1F683 /* Vergil_ScrollView.m in Sources */,
 				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
-				8A50E14B1D3DF22B002DC69E /* VergilTextView.m in Sources */,
+				8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */,
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
 				8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */,
+				8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */,
 				8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
