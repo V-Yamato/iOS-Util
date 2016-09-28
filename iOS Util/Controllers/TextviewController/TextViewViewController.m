@@ -24,7 +24,47 @@
 //    textview光标从头开始SB里面直接勾选
 //    self.automaticallyAdjustsScrollViewInsets=NO;
     
+    
+    double f = 999999.999999;
+//    NSString *str =  [self notRounding:f afterPoint:1];
+//    NSInteger a = f*100;
+//    float b = a/100.0;
+//    NSLog(@"%@",str);
+//    NSLog(@"%01f",b);
+    double c =floor(f*10)/10;
+    
+    NSLog(@"%.1f",c);
+    
+    NSString *str1 =  [NSString stringWithFormat:@"%01f",f];
+    NSLog(@"%@",str1);
+    
 }
+
+
+-(NSString *)notRounding:(float)price afterPoint:(int)position{
+    
+    NSDecimalNumberHandler* roundingBehavior = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundDown scale:position raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:NO];
+    
+    NSDecimalNumber *ouncesDecimal;
+    
+    NSDecimalNumber *roundedOunces;
+    
+    
+    
+    ouncesDecimal = [[NSDecimalNumber alloc] initWithFloat:price];
+    
+    roundedOunces = [ouncesDecimal decimalNumberByRoundingAccordingToBehavior:roundingBehavior];
+    
+    return [NSString stringWithFormat:@"%@",roundedOunces];
+    
+}
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

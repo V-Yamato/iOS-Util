@@ -13,6 +13,10 @@
 		8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1491D3DF22B002DC69E /* Vergil_TextView.m */; };
 		8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1511D3DF2ED002DC69E /* WebViewController.m */; };
 		8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */; };
+		8A8C09B11D9A478900DA35B7 /* FirstViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C09B01D9A478900DA35B7 /* FirstViewCtrl.m */; };
+		8A8C09B41D9A479A00DA35B7 /* SecViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C09B31D9A479A00DA35B7 /* SecViewCtrl.m */; };
+		8A8C09B71D9A47AA00DA35B7 /* ThirViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C09B61D9A47AA00DA35B7 /* ThirViewCtrl.m */; };
+		8A8C09B91D9A4AC200DA35B7 /* SLiderView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8C09B81D9A4AC200DA35B7 /* SLiderView.storyboard */; };
 		8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94BE1D2E56FD0058EE7C /* main.m */; };
 		8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94C11D2E56FD0058EE7C /* AppDelegate.m */; };
 		8ACF94CA1D2E56FD0058EE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF94C91D2E56FD0058EE7C /* Assets.xcassets */; };
@@ -55,6 +59,13 @@
 		8A50E1511D3DF2ED002DC69E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		8A50E1531D3DF9A3002DC69E /* Vergil_WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_WKWebView.h; sourceTree = "<group>"; };
 		8A50E1541D3DF9A3002DC69E /* Vergil_WKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vergil_WKWebView.m; sourceTree = "<group>"; };
+		8A8C09AF1D9A478900DA35B7 /* FirstViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewCtrl.h; sourceTree = "<group>"; };
+		8A8C09B01D9A478900DA35B7 /* FirstViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewCtrl.m; sourceTree = "<group>"; };
+		8A8C09B21D9A479A00DA35B7 /* SecViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewCtrl.h; sourceTree = "<group>"; };
+		8A8C09B31D9A479A00DA35B7 /* SecViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewCtrl.m; sourceTree = "<group>"; };
+		8A8C09B51D9A47AA00DA35B7 /* ThirViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirViewCtrl.h; sourceTree = "<group>"; };
+		8A8C09B61D9A47AA00DA35B7 /* ThirViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirViewCtrl.m; sourceTree = "<group>"; };
+		8A8C09B81D9A4AC200DA35B7 /* SLiderView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SLiderView.storyboard; sourceTree = "<group>"; };
 		8ACF94BA1D2E56FD0058EE7C /* iOS Util.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Util.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACF94BE1D2E56FD0058EE7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ACF94C01D2E56FD0058EE7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +163,19 @@
 			path = WebViewController;
 			sourceTree = "<group>";
 		};
+		8A8C09AE1D9A471700DA35B7 /* ViewsInIt */ = {
+			isa = PBXGroup;
+			children = (
+				8A8C09AF1D9A478900DA35B7 /* FirstViewCtrl.h */,
+				8A8C09B01D9A478900DA35B7 /* FirstViewCtrl.m */,
+				8A8C09B21D9A479A00DA35B7 /* SecViewCtrl.h */,
+				8A8C09B31D9A479A00DA35B7 /* SecViewCtrl.m */,
+				8A8C09B51D9A47AA00DA35B7 /* ThirViewCtrl.h */,
+				8A8C09B61D9A47AA00DA35B7 /* ThirViewCtrl.m */,
+			);
+			path = ViewsInIt;
+			sourceTree = "<group>";
+		};
 		8ACF94B11D2E56FD0058EE7C = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +253,10 @@
 		8AFBF16D1D5C474500E1F683 /* SlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A8C09AE1D9A471700DA35B7 /* ViewsInIt */,
 				8AFBF16E1D5C479500E1F683 /* SildeNavViewController.h */,
 				8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */,
+				8A8C09B81D9A4AC200DA35B7 /* SLiderView.storyboard */,
 			);
 			name = SlideViewController;
 			path = TableViewController;
@@ -365,6 +391,7 @@
 			files = (
 				8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */,
 				8ACF94CD1D2E56FD0058EE7C /* LaunchScreen.storyboard in Resources */,
+				8A8C09B91D9A4AC200DA35B7 /* SLiderView.storyboard in Resources */,
 				8ACF94CA1D2E56FD0058EE7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,10 +422,13 @@
 				8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */,
 				8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */,
 				8AFBF1741D5C671B00E1F683 /* Vergil_ScrollView.m in Sources */,
+				8A8C09B41D9A479A00DA35B7 /* SecViewCtrl.m in Sources */,
+				8A8C09B11D9A478900DA35B7 /* FirstViewCtrl.m in Sources */,
 				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
 				8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */,
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
+				8A8C09B71D9A47AA00DA35B7 /* ThirViewCtrl.m in Sources */,
 				8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */,
 				8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */,
 				8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */,
