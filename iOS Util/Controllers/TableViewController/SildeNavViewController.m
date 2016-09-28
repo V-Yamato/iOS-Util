@@ -10,6 +10,7 @@
 #import "FirstViewCtrl.h"
 #import "SecViewCtrl.h"
 #import "ThirViewCtrl.h"
+#import "SlideLabel.h"
 
 @interface SildeNavViewController ()<UIScrollViewDelegate> {
     NSArray *titleArray;
@@ -59,7 +60,7 @@
         CGFloat lblH = 40;
         CGFloat lblY = 0;
         CGFloat lblX = i * lblW;
-        UILabel *lbl1 = [[UILabel alloc]init];
+        SlideLabel *lbl1 = [[SlideLabel alloc]init];
         UIViewController *vc = self.childViewControllers[i];
         lbl1.text =vc.title;
         lbl1.frame = CGRectMake(lblX, lblY, lblW, lblH);
@@ -67,7 +68,7 @@
         [_navScrollView addSubview:lbl1];
         lbl1.tag = i;
         lbl1.userInteractionEnabled = YES;
-//        [lbl1 addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(lblClick:)]];
+        [lbl1 addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(lblClick:)]];
     }
     _navScrollView.contentSize = CGSizeMake(70 * 3, 0);
 }
@@ -75,6 +76,8 @@
 - (void)setUpSubViews {
     _contentScrollView.delegate = self;
     
+    _navScrollView.showsHorizontalScrollIndicator=NO;
+    _navScrollView.showsVerticalScrollIndicator=NO;
     
     CGFloat contentSize = self.childViewControllers.count*[UIScreen mainScreen].bounds.size.width;
     _contentScrollView.contentSize = CGSizeMake(contentSize, 0);
@@ -82,8 +85,30 @@
     
     FirstViewCtrl *firView = [self.childViewControllers firstObject];
     [firView.view setFrame:_contentScrollView.bounds];
+    
+    SlideLabel *lable = [_navScrollView.subviews firstObject];
+    lable.scale = 1.0;
+    
     [_contentScrollView addSubview:firView.view];
 }
+
+
+#pragma mark --Actions
+/** 标题栏label的点击事件 */
+- (void)lblClick:(UITapGestureRecognizer *)recognizer
+{
+    SlideLabel *titlelable = (SlideLabel *)recognizer.view;
+    
+    CGFloat offsetX = titlelable.tag * _contentScrollView.frame.size.width;
+    
+    CGFloat offsetY = _contentScrollView.contentOffset.y;
+    CGPoint offset = CGPointMake(offsetX, offsetY);
+    
+    [_contentScrollView setContentOffset:offset animated:YES];
+    
+//    [self setScrollToTopWithTableViewIndex:titlelable.tag];
+}
+
 
 
 
@@ -114,7 +139,23 @@
     [self scrollViewDidEndScrollingAnimation:scrollView];
 }
 
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // 取出绝对值 避免最左边往右拉时形变超过1
+    CGFloat value = ABS(scrollView.contentOffset.x / scrollView.frame.size.width);
+    NSUInteger leftIndex = (int)value;
+    NSUInteger rightIndex = leftIndex + 1;
+    CGFloat scaleRight = value - leftIndex;
+    CGFloat scaleLeft = 1 - scaleRight;
+    SlideLabel *labelLeft = _navScrollView.subviews[leftIndex];
+    labelLeft.scale = scaleLeft;
+    // 考虑到最后一个板块，如果右边已经没有板块了 就不在下面赋值scale了
+    if (rightIndex < _navScrollView.subviews.count) {
+        SlideLabel *labelRight = _navScrollView.subviews[rightIndex];
+        labelRight.scale = scaleRight;
+    }
+    
+}
 
 
 

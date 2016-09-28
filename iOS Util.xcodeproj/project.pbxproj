@@ -27,6 +27,7 @@
 		8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF94F51D2E57F80058EE7C /* CALayer+Util.m */; };
 		8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */; };
 		8AFBF1741D5C671B00E1F683 /* Vergil_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */; };
+		8AFCF6361D9B692700D19482 /* SlideLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCF6351D9B692700D19482 /* SlideLabel.m */; };
 		8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF912B1D2FBF0000180BAD /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,8 @@
 		8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SildeNavViewController.m; sourceTree = "<group>"; };
 		8AFBF1721D5C671B00E1F683 /* Vergil_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vergil_ScrollView.h; sourceTree = "<group>"; };
 		8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vergil_ScrollView.m; sourceTree = "<group>"; };
+		8AFCF6341D9B692700D19482 /* SlideLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideLabel.h; sourceTree = "<group>"; };
+		8AFCF6351D9B692700D19482 /* SlideLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideLabel.m; sourceTree = "<group>"; };
 		8AFF912A1D2FBF0000180BAD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8AFF912B1D2FBF0000180BAD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,6 +256,7 @@
 		8AFBF16D1D5C474500E1F683 /* SlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8AFCF6331D9B690E00D19482 /* TitlelLabel */,
 				8A8C09AE1D9A471700DA35B7 /* ViewsInIt */,
 				8AFBF16E1D5C479500E1F683 /* SildeNavViewController.h */,
 				8AFBF16F1D5C479500E1F683 /* SildeNavViewController.m */,
@@ -269,6 +273,15 @@
 				8AFBF1731D5C671B00E1F683 /* Vergil_ScrollView.m */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		8AFCF6331D9B690E00D19482 /* TitlelLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8AFCF6341D9B692700D19482 /* SlideLabel.h */,
+				8AFCF6351D9B692700D19482 /* SlideLabel.m */,
+			);
+			path = TitlelLabel;
 			sourceTree = "<group>";
 		};
 		8AFF91291D2FBEEC00180BAD /* Controllers */ = {
@@ -348,7 +361,7 @@
 		8ACF94B21D2E56FD0058EE7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "黄聪";
 				TargetAttributes = {
 					8ACF94B91D2E56FD0058EE7C = {
@@ -425,6 +438,7 @@
 				8A8C09B41D9A479A00DA35B7 /* SecViewCtrl.m in Sources */,
 				8A8C09B11D9A478900DA35B7 /* FirstViewCtrl.m in Sources */,
 				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
+				8AFCF6361D9B692700D19482 /* SlideLabel.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
 				8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */,
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
@@ -492,8 +506,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -538,8 +554,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
