@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C0F2671D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */; };
+		38C0F26A1D9E4FD700E17296 /* InfiniteScrollCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */; };
 		8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A05E3BB1D5B12CB0059C319 /* Main.storyboard */; };
 		8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3BE1D5B12DF0059C319 /* MainViewController.m */; };
 		8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */; };
@@ -49,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38C0F2651D9E4E1B00E17296 /* InfiniteScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewCtrl.h; sourceTree = "<group>"; };
+		38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewCtrl.m; sourceTree = "<group>"; };
+		38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollCollectView.h; sourceTree = "<group>"; };
+		38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollCollectView.m; sourceTree = "<group>"; };
 		8A05E3BB1D5B12CB0059C319 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8A05E3BD1D5B12DF0059C319 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8A05E3BE1D5B12DF0059C319 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -120,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C0F2641D9E4DEF00E17296 /* InfiniteScrollCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				38C0F2651D9E4E1B00E17296 /* InfiniteScrollViewCtrl.h */,
+				38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */,
+				38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */,
+				38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */,
+			);
+			path = InfiniteScrollCtrl;
+			sourceTree = "<group>";
+		};
 		8A0040B81D333625006B7D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +304,7 @@
 		8AFF91291D2FBEEC00180BAD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				38C0F2641D9E4DEF00E17296 /* InfiniteScrollCtrl */,
 				8AFBF16D1D5C474500E1F683 /* SlideViewController */,
 				8A05E3C01D5B159D0059C319 /* TextviewController */,
 				8A50E14D1D3DF28A002DC69E /* WebViewController */,
@@ -431,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */,
+				38C0F2671D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m in Sources */,
 				8ACF94C21D2E56FD0058EE7C /* AppDelegate.m in Sources */,
 				8AFF912C1D2FBF0000180BAD /* BaseViewController.m in Sources */,
 				8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */,
@@ -445,6 +464,7 @@
 				8A8C09B71D9A47AA00DA35B7 /* ThirViewCtrl.m in Sources */,
 				8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */,
 				8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */,
+				38C0F26A1D9E4FD700E17296 /* InfiniteScrollCollectView.m in Sources */,
 				8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
