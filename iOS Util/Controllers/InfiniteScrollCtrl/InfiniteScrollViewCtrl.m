@@ -7,9 +7,10 @@
 //
 
 #import "InfiniteScrollViewCtrl.h"
+#import "InfiniteScrollCollectView.h"
 
-@interface InfiniteScrollViewCtrl ()<UICollectionViewDelegate,UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UICollectionView *scrollCollectView;
+@interface InfiniteScrollViewCtrl ()
+@property (weak, nonatomic) IBOutlet InfiniteScrollCollectView *infiniteScroll;
 
 @end
 
@@ -17,10 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_scrollCollectView setDelegate:self];
-    [_scrollCollectView setDataSource:self];
+//    _infiniteScroll.contentOffset = CGPointMake(self.view.frame.size.width, 0);
+//    NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:0];
+//    [_infiniteScroll scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+    
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -148,7 +148,7 @@
         <!--Infinite Scroll View Ctrl-->
         <scene sceneID="4Iy-dL-PBN">
             <objects>
-                <viewController id="e5D-k0-djn" customClass="InfiniteScrollViewCtrl" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="e5D-k0-djn" customClass="InfiniteScrollViewCtrl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S4R-ls-jev"/>
                         <viewControllerLayoutGuide type="bottom" id="2wn-ow-731"/>
@@ -157,43 +157,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MAS-1P-M0h">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MAS-1P-M0h" customClass="InfiniteScrollCollectView">
                                 <color key="backgroundColor" red="0.3294117647" green="0.64313725489999995" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Ly5-Ma-l8h"/>
-                                    <constraint firstAttribute="width" constant="300" id="rJQ-IW-EU2"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ly5-Ma-l8h"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oys-if-gPB">
-                                    <size key="itemSize" width="153" height="140"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="N5X-84-8ek">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ffb-uD-Lbx">
-                                        <rect key="frame" x="0.0" y="48" width="153" height="140"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" reuseIdentifier="1" id="Ffb-uD-Lbx" customClass="InfiniteCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="153" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentOffset">
+                                        <size key="value" width="320" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MAS-1P-M0h" firstAttribute="leading" secondItem="dRK-Rx-UUs" secondAttribute="leading" id="9is-nb-p2U"/>
                             <constraint firstItem="MAS-1P-M0h" firstAttribute="centerY" secondItem="dRK-Rx-UUs" secondAttribute="centerY" id="a2n-yP-FXn"/>
                             <constraint firstItem="MAS-1P-M0h" firstAttribute="centerX" secondItem="dRK-Rx-UUs" secondAttribute="centerX" id="tpx-Fl-BCp"/>
+                            <constraint firstAttribute="trailing" secondItem="MAS-1P-M0h" secondAttribute="trailing" id="uPV-Qa-eZe"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollCollectView" destination="MAS-1P-M0h" id="3E1-7d-35L"/>
+                        <outlet property="infiniteScroll" destination="MAS-1P-M0h" id="WcU-cH-gzc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udy-mQ-slS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615.20000000000005" y="876.61169415292363"/>
+            <point key="canvasLocation" x="710" y="813"/>
         </scene>
         <!--Silde Nav View Controller-->
         <scene sceneID="6zN-Qg-5J4">

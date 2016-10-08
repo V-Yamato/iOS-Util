@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3835C22D1DA8C23E0089A51D /* InfiniteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3835C22C1DA8C23E0089A51D /* InfiniteCell.m */; };
 		38C0F2671D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */; };
 		38C0F26A1D9E4FD700E17296 /* InfiniteScrollCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */; };
+		59694B9E402DCFA0A60144F3 /* libPods-iOS Util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B281015E6CFFD09C1EFF168 /* libPods-iOS Util.a */; };
 		8A05E3BC1D5B12CB0059C319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A05E3BB1D5B12CB0059C319 /* Main.storyboard */; };
 		8A05E3BF1D5B12DF0059C319 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3BE1D5B12DF0059C319 /* MainViewController.m */; };
 		8A05E3C31D5B15AB0059C319 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A05E3C21D5B15AB0059C319 /* TextViewViewController.m */; };
@@ -51,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B281015E6CFFD09C1EFF168 /* libPods-iOS Util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS Util.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3835C2261DA897DB0089A51D /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		3835C22B1DA8C23E0089A51D /* InfiniteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteCell.h; sourceTree = "<group>"; };
+		3835C22C1DA8C23E0089A51D /* InfiniteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteCell.m; sourceTree = "<group>"; };
 		38C0F2651D9E4E1B00E17296 /* InfiniteScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewCtrl.h; sourceTree = "<group>"; };
 		38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewCtrl.m; sourceTree = "<group>"; };
 		38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollCollectView.h; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		8AFCF6351D9B692700D19482 /* SlideLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideLabel.m; sourceTree = "<group>"; };
 		8AFF912A1D2FBF0000180BAD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8AFF912B1D2FBF0000180BAD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9499AAA23B61EA10EE90252A /* Pods-iOS Util.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Util.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Util/Pods-iOS Util.debug.xcconfig"; sourceTree = "<group>"; };
+		96861354A4E0284E91F52C89 /* Pods-iOS Util.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Util.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Util/Pods-iOS Util.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59694B9E402DCFA0A60144F3 /* libPods-iOS Util.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,15 +135,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3835C2251DA897CA0089A51D /* GlobalDefine */ = {
+			isa = PBXGroup;
+			children = (
+				3835C2261DA897DB0089A51D /* GlobalDefine.h */,
+			);
+			path = GlobalDefine;
+			sourceTree = "<group>";
+		};
+		3835C2271DA897FB0089A51D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3835C2291DA8C21D0089A51D /* InfiniteCell */ = {
+			isa = PBXGroup;
+			children = (
+				3835C22B1DA8C23E0089A51D /* InfiniteCell.h */,
+				3835C22C1DA8C23E0089A51D /* InfiniteCell.m */,
+			);
+			path = InfiniteCell;
+			sourceTree = "<group>";
+		};
 		38C0F2641D9E4DEF00E17296 /* InfiniteScrollCtrl */ = {
 			isa = PBXGroup;
 			children = (
+				3835C2291DA8C21D0089A51D /* InfiniteCell */,
 				38C0F2651D9E4E1B00E17296 /* InfiniteScrollViewCtrl.h */,
 				38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */,
 				38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */,
 				38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */,
 			);
 			path = InfiniteScrollCtrl;
+			sourceTree = "<group>";
+		};
+		5AC5DE2DECC3EED7A86F5FF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9499AAA23B61EA10EE90252A /* Pods-iOS Util.debug.xcconfig */,
+				96861354A4E0284E91F52C89 /* Pods-iOS Util.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87E41CA23D7DBBC4FD161BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B281015E6CFFD09C1EFF168 /* libPods-iOS Util.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8A0040B81D333625006B7D84 /* Views */ = {
@@ -203,6 +254,8 @@
 				8ACF94D61D2E56FD0058EE7C /* iOS UtilTests */,
 				8ACF94E11D2E56FD0058EE7C /* iOS UtilUITests */,
 				8ACF94BB1D2E56FD0058EE7C /* Products */,
+				5AC5DE2DECC3EED7A86F5FF2 /* Pods */,
+				87E41CA23D7DBBC4FD161BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +272,8 @@
 		8ACF94BC1D2E56FD0058EE7C /* iOS Util */ = {
 			isa = PBXGroup;
 			children = (
+				3835C2271DA897FB0089A51D /* Application */,
+				3835C2251DA897CA0089A51D /* GlobalDefine */,
 				8ACF94F01D2E57540058EE7C /* Category */,
 				8A0040B81D333625006B7D84 /* Views */,
 				8AFF91291D2FBEEC00180BAD /* Controllers */,
@@ -324,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ACF94E71D2E56FD0058EE7C /* Build configuration list for PBXNativeTarget "iOS Util" */;
 			buildPhases = (
+				D4DF273E71F57F0BCB9DE4D6 /* [CP] Check Pods Manifest.lock */,
 				8ACF94B61D2E56FD0058EE7C /* Sources */,
 				8ACF94B71D2E56FD0058EE7C /* Frameworks */,
 				8ACF94B81D2E56FD0058EE7C /* Resources */,
+				062AD6663E2442A1A827223E /* [CP] Embed Pods Frameworks */,
+				FBC48CA8FC5E92AED2C3583C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,6 +442,7 @@
 				TargetAttributes = {
 					8ACF94B91D2E56FD0058EE7C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PVXWE6R83V;
 					};
 					8ACF94D21D2E56FD0058EE7C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -443,6 +502,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		062AD6663E2442A1A827223E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS Util/Pods-iOS Util-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4DF273E71F57F0BCB9DE4D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC48CA8FC5E92AED2C3583C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS Util/Pods-iOS Util-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ACF94B61D2E56FD0058EE7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -463,6 +570,7 @@
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
 				8A8C09B71D9A47AA00DA35B7 /* ThirViewCtrl.m in Sources */,
 				8A50E1551D3DF9A3002DC69E /* Vergil_WKWebView.m in Sources */,
+				3835C22D1DA8C23E0089A51D /* InfiniteCell.m in Sources */,
 				8AFBF1701D5C479500E1F683 /* SildeNavViewController.m in Sources */,
 				38C0F26A1D9E4FD700E17296 /* InfiniteScrollCollectView.m in Sources */,
 				8ACF94F31D2E57660058EE7C /* UIColor+Util.m in Sources */,
@@ -604,8 +712,10 @@
 		};
 		8ACF94E81D2E56FD0058EE7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9499AAA23B61EA10EE90252A /* Pods-iOS Util.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PVXWE6R83V;
 				INFOPLIST_FILE = "iOS Util/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vergil.iOS-Util";
@@ -615,8 +725,10 @@
 		};
 		8ACF94E91D2E56FD0058EE7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96861354A4E0284E91F52C89 /* Pods-iOS Util.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PVXWE6R83V;
 				INFOPLIST_FILE = "iOS Util/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vergil.iOS-Util";
