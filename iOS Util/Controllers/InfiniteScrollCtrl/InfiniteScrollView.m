@@ -1,71 +1,67 @@
 //
-//  InfiniteScrollCollectView.m
+//  InfiniteScrollView.m
 //  iOS Util
 //
-//  Created by 左文涛 on 16/9/30.
+//  Created by 左文涛 on 16/10/10.
 //  Copyright © 2016年 黄聪. All rights reserved.
 //
 
-#import "InfiniteScrollCollectView.h"
+#import "InfiniteScrollView.h"
 #import "InfiniteCell.h"
 
-@interface InfiniteScrollCollectView()
-
-@property (assign,nonatomic)BOOL firstLoad;
-@property (assign,nonatomic)NSInteger imgNum;
+@interface InfiniteScrollView() {
+    UICollectionView *collView;
+    BOOL firstLoad;
+}
 
 @end
 
-
-@implementation InfiniteScrollCollectView
-
+@implementation InfiniteScrollView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self ==  [super initWithFrame:frame]) {
-        self.delegate = self;
-        self.dataSource = self;
         [self setupSubViews];
-        
     }
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self == [super initWithCoder:aDecoder]) {
-        self.delegate = self;
-        self.dataSource = self;
         [self setupSubViews];
     }
     return self;
 }
 
-
-#pragma mark -- Data&SubViews
-- (void)setupSubViews {
-    _imgArray = @[@"1",@"2",@"3"];
-    _firstLoad = YES;
-    _imgNum = 5;
-    self.pagingEnabled =YES;
-    UIPageControl *pageCtrl = [[UIPageControl alloc]init];
-    [pageCtrl setBackgroundColor:[UIColor redColor]];
-    [self addSubview:pageCtrl];
-    [pageCtrl mas_makeConstraints:^(MASConstraintMaker *make) {
+- (void)updateConstraints {
+    [super updateConstraints];
+    [collView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(self);
         make.centerX.equalTo(self);
-//        make.bottom.equalTo(self).with.offset(-10);
         make.centerY.equalTo(self);
     }];
-    pageCtrl.numberOfPages = [_imgArray count];
+}
+
+#pragma mark --SubViews Data
+- (void)setupSubViews {
+    firstLoad=YES;
+    _imgArray = @[@"1",@"2",@"3"];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    collView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:layout];
+    collView.delegate=self;
+    collView.dataSource=self;
+    collView.pagingEnabled=YES;
+    [collView registerClass:[InfiniteCell class] forCellWithReuseIdentifier:@"11"];
+    [self addSubview:collView];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    if (_firstLoad) {
-        [self setContentOffset:CGPointMake(320, 0)];
-        _firstLoad = NO;
+    if (firstLoad) {
+        [collView setContentOffset:CGPointMake(SCREEN_WIDTH, 0)];
+        firstLoad = NO;
     }
 }
-
-
 
 
 #pragma mark -- Scroll Delegates
@@ -85,20 +81,20 @@
     CGPoint offset = scrollView.contentOffset;
     CGFloat width = self.frame.size.width;
     NSLog(@"%f",offset.x );
-
+    
     if (offset.x < 0)
     {
-        NSIndexPath *path = [NSIndexPath indexPathForRow:3-1 inSection:0];
-        [self scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
+        NSIndexPath *path = [NSIndexPath indexPathForRow:[_imgArray count] inSection:0];
+        [collView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
     }
-    else if (offset.x > 2*width)
+    else if (offset.x > ([_imgArray count]+1)*width)
     {
         NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:0];
-        [self scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+        [collView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
     }
-//    根据偏移量计算出当前页码数
-//    NSInteger imageIndex = self.rootScrollView.contentOffset.x / width + 0.5;
-//    self.imagePage.currentPage = self.imageIndex - 1;
+    //    根据偏移量计算出当前页码数
+    //    NSInteger imageIndex = self.rootScrollView.contentOffset.x / width + 0.5;
+    //    self.imagePage.currentPage = self.imageIndex - 1;
 }
 
 
@@ -113,7 +109,10 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    InfiniteCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"1" forIndexPath:indexPath];
+    
+    static NSString *cellID = @"11";
+    
+    InfiniteCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     if (indexPath.row ==0) {
         [cell setBackgroundColor:[UIColor yellowColor]];
         return cell;
@@ -121,13 +120,15 @@
         [cell setBackgroundColor:[UIColor redColor]];
         return cell;
     }
+    [cell setBackgroundColor:[UIColor blueColor]];
+    
     return cell;
 }
 
 
 #pragma mark -- CollectionView LayOut
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(SCREEN_WIDTH,self.frame.size.height);
+    return CGSizeMake(SCREEN_WIDTH,100);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {

@@ -10,4 +10,9 @@
 
 @interface InfiniteScrollCollectView : UICollectionView<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
+@property (copy,nonatomic)NSArray *imgArray;
+
+
+
+
 @end

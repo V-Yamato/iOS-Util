@@ -8,6 +8,7 @@
 
 #import "InfiniteScrollViewCtrl.h"
 #import "InfiniteScrollCollectView.h"
+#import "InfiniteScrollView.h"
 
 @interface InfiniteScrollViewCtrl ()
 @property (weak, nonatomic) IBOutlet InfiniteScrollCollectView *infiniteScroll;
@@ -18,10 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _infiniteScroll.contentOffset = CGPointMake(self.view.frame.size.width, 0);
-//    NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:0];
-//    [_infiniteScroll scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
-    
+    InfiniteScrollView *view = [[InfiniteScrollView alloc]init];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(150);
+        make.bottom.equalTo(self.view);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+    }];
     
 }
 

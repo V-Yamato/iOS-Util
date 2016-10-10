@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3835C22D1DA8C23E0089A51D /* InfiniteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3835C22C1DA8C23E0089A51D /* InfiniteCell.m */; };
+		3882B7D41DAB7AE2008269FF /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3882B7D31DAB7AE2008269FF /* InfiniteScrollView.m */; };
 		38C0F2671D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */; };
 		38C0F26A1D9E4FD700E17296 /* InfiniteScrollCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */; };
 		59694B9E402DCFA0A60144F3 /* libPods-iOS Util.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B281015E6CFFD09C1EFF168 /* libPods-iOS Util.a */; };
@@ -57,6 +58,8 @@
 		3835C2261DA897DB0089A51D /* GlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		3835C22B1DA8C23E0089A51D /* InfiniteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteCell.h; sourceTree = "<group>"; };
 		3835C22C1DA8C23E0089A51D /* InfiniteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteCell.m; sourceTree = "<group>"; };
+		3882B7D21DAB7AE2008269FF /* InfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollView.h; sourceTree = "<group>"; };
+		3882B7D31DAB7AE2008269FF /* InfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollView.m; sourceTree = "<group>"; };
 		38C0F2651D9E4E1B00E17296 /* InfiniteScrollViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollViewCtrl.h; sourceTree = "<group>"; };
 		38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollViewCtrl.m; sourceTree = "<group>"; };
 		38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollCollectView.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				38C0F2661D9E4E1B00E17296 /* InfiniteScrollViewCtrl.m */,
 				38C0F2681D9E4FD700E17296 /* InfiniteScrollCollectView.h */,
 				38C0F2691D9E4FD700E17296 /* InfiniteScrollCollectView.m */,
+				3882B7D21DAB7AE2008269FF /* InfiniteScrollView.h */,
+				3882B7D31DAB7AE2008269FF /* InfiniteScrollView.m */,
 			);
 			path = InfiniteScrollCtrl;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				8A50E1521D3DF2ED002DC69E /* WebViewController.m in Sources */,
 				8AFCF6361D9B692700D19482 /* SlideLabel.m in Sources */,
 				8ACF94BF1D2E56FD0058EE7C /* main.m in Sources */,
+				3882B7D41DAB7AE2008269FF /* InfiniteScrollView.m in Sources */,
 				8A50E14B1D3DF22B002DC69E /* Vergil_TextView.m in Sources */,
 				8ACF94F61D2E57F80058EE7C /* CALayer+Util.m in Sources */,
 				8A8C09B71D9A47AA00DA35B7 /* ThirViewCtrl.m in Sources */,
