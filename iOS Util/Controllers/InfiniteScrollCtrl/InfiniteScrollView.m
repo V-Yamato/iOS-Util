@@ -12,6 +12,7 @@
 @interface InfiniteScrollView() {
     UICollectionView *collView;
     BOOL firstLoad;
+    UIPageControl *pageCtrl;
 }
 
 @end
@@ -39,6 +40,11 @@
         make.centerX.equalTo(self);
         make.centerY.equalTo(self);
     }];
+    
+    [pageCtrl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self);
+        make.bottom.equalTo(self).with.offset(-10);
+    }];
 }
 
 #pragma mark --SubViews Data
@@ -53,6 +59,9 @@
     collView.pagingEnabled=YES;
     [collView registerClass:[InfiniteCell class] forCellWithReuseIdentifier:@"11"];
     [self addSubview:collView];
+    pageCtrl = [[UIPageControl alloc]init];
+    pageCtrl.currentPageIndicatorTintColor = [UIColor redColor];
+    [self addSubview:pageCtrl];
 }
 
 - (void)layoutSubviews {
@@ -91,6 +100,10 @@
     {
         NSIndexPath *path = [NSIndexPath indexPathForRow:1 inSection:0];
         [collView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+    }else if (offset.x<width) {
+        pageCtrl.currentPage = [_imgArray count];
+    }else if (offset.x>[_imgArray count]*width) {
+        pageCtrl.currentPage = 0;
     }
     //    根据偏移量计算出当前页码数
     //    NSInteger imageIndex = self.rootScrollView.contentOffset.x / width + 0.5;
@@ -128,7 +141,7 @@
 
 #pragma mark -- CollectionView LayOut
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(SCREEN_WIDTH,100);
+    return CGSizeMake(SCREEN_WIDTH,self.frame.size.height);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
